@@ -1,9 +1,9 @@
 const newsIndex = document.querySelector(".news");
 const spinner = document.querySelector(".spinner");
 spinner.style.display = "block";
-newsIndex.style.display = "none";
+// newsIndex.style.display = "none";
 
-fetch("https://friendly-jay-uniform.cyclic.cloud/api/v1/news")
+fetch("https://plain-jewelry-pike.cyclic.app/api/v1/news")
   .then((response) => {
     return response.json();
   })
@@ -28,3 +28,7 @@ fetch("https://friendly-jay-uniform.cyclic.cloud/api/v1/news")
         `;
     });
   });
+
+
+
+

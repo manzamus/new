@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nyabiheke Newsletter</title>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <h3 class="admin-h">ADMIN DASHBOARD</h3>
+      <div class="main-admin">
+        <div class="link-side-admin">
+          <ul class="admin-links">
+            <li><a href="" class="allUsers">All Users</a></li>
+            <li><a href="">Post News</a></li>
+            <li><a href="">Messages</a></li>
+          </ul>
+        </div>
+        <div class="contents-admin">
+          <form action="" class="newsForm">
+            <label for="newsMainTitle">newsMainTitle</label>
+            <input type="text" name="newsMainTitle" id="newsMainTitle" />
+            <label for="newsTitle">newsTitle</label>
+            <input type="text" name="newsTitle" id="newsTitle" />
+            <label for="newsSummaryDescription">newsSummaryDescription</label>
+            <input
+              type="text"
+              name="newsSummaryDescription"
+              id="newsSummaryDescription"
+            />
+            <label for="newsDescription">newsDescription</label>
+            <input type="text" name="newsDescription" id="newsDescription" />
+            <label for="newsImage">newsImage</label>
+            <input type="text" name="newsImage" id="newsImage" />
+            <label for="category">category</label>
+            <input type="text" name="category" id="category" />
+            <label for="publisher">publisher</label>
+            <input type="text" name="publisher" id="publisher" />
+            <input type="submit" value="Post" />
+          </form>
+          <table class="getAllNews">
+            <tr>
+              <th>NO</th>
+              <th>Main Tile</th>
+              <th>Title</th>
+              <th>Summary Description</th>
+              <th>Publisher</th>
+              <th colspan="2">Action</th>
+            </tr>
+            <div class="spinner"></div>
+          </table>
+          <table class="delete All news">
+            <tr>
+              <th>NO</th>
+              <th>Main Tile</th>
+              <th>Title</th>
+              <th>Summary Description</th>
+              <th>Publisher</th>
+              <th colspan="2">Action</th>
+            </tr>
+            <div class="spinner"></div>
+          </table>
+          <table class="tableusers">
+            <tr>
+              <th>NO</th>
+              <th>FirstName</th>
+              <th>LastName</th>
+              <th>Email</th>
+              <th>Role</th>
+            </tr>
+          </table>
+
+          <table class="category">
+            <tr>
+              <th>No</th>
+              <th>category name</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/get all User.js"></script>
+
+    <script src="./js/addNews.js"></script>
+    <script src="./js/dataToDisplay.js"></script>
+    <script src="./js/get All Category.js"></script>
+    <script src="./js/apdateNews.js"></script>
+    <script src="./js/delete One News.js"></script>
+    <script src="./js/delete All News.js"></script>
+  </body>
+</html>

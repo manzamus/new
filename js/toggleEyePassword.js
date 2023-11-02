@@ -1,10 +1,13 @@
 const password = document.querySelector("#password");
 const togglePassword = document.querySelector("#togglePassword");
 
-togglePassword.addEventListener("click", function (e) {
-  const type =
-    password.getAttribute("type") === "password" ? "text" : "password";
-  password.setAttribute("type", type);
+togglePassword.addEventListener("click", function () {
+  if (password.type == "password") {
+    password.type = "text";
 
-  this.classList.toggle("fas fa-eye");
+    togglePassword.className = "fas fa-eye";
+  } else {
+    password.type = "password";
+    togglePassword.className = "fas fa-eye-slash";
+  }
 });

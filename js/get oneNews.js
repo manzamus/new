@@ -4,7 +4,7 @@ const idParams = window.location.href.split("?id=")[1];
 const spinner = document.querySelector(".spinner");
 spinner.style.display = "block";
 singleNewsContainer.style.display = "none";
-fetch(`https://friendly-jay-uniform.cyclic.cloud/api/v1/news${idParams}`)
+fetch(`https://plain-jewelry-pike.cyclic.app/api/v1/news/${idParams}`)
   .then((resp) => {
     return resp.json();
   })
